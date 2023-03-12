@@ -47,3 +47,31 @@ hr {
     width: 80%;
     margin: 0 auto;
 }
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+    align-items: center;
+    padding: 30px;
+}
+
+.img-container {
+    grid-column-start: 2;
+}
+.intro div img {
+    width: 300px;
+    border: 2px solid var(--green);
+    opacity: .4;
+}
+.intro div img:hover {
+    opacity: .8;
+    transition: .8s ease-in-out;
+}
+
+.introduction {
+    color: var(--green);
+    font-family: sans-serif;
+    grid-column: 4 / span 2;
+    line-height: 1.5rem;
+}
