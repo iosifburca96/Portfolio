@@ -61,17 +61,14 @@ hr {
 }
 .intro div img {
     width: 300px;
-    border: 2px solid var(--green);
-    opacity: .4;
-}
-.intro div img:hover {
-    opacity: .8;
-    transition: .8s ease-in-out;
+    border-radius: 10px;
+    opacity: .6;
 }
 
 .introduction {
-    color: var(--green);
+    color: var(--light-blue);
     font-family: sans-serif;
     grid-column: 4 / span 2;
     line-height: 1.5rem;
+    text-align: center;
 }

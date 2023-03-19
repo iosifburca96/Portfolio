@@ -1,0 +1,60 @@
+.orbit {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 2px solid #333;
+    animation: orbit 6s linear infinite;
+  }
+  
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .p1 {
+    animation: spin 3s linear infinite;
+  }
+  
+  .p2 {
+    animation: spin 3s linear infinite reverse;
+  }
+  
+  .p3 {
+    animation: spin 3s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  .p4 {
+    animation: spin 3s linear infinite reverse;
+    animation-delay: 1s;
+  }
+  
+  @keyframes orbit {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: translate(-150px) rotate(0);
+    }
+    to {
+      transform: translate(-150px) rotate(360deg);
+    }
+  }
+  
